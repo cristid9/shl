@@ -42,7 +42,7 @@ class TargetPlatform:
         self._credentials = value
 
     @property
-    def project_version(self):
+    def service_version(self):
         return self._service_version
 
     @service_version.setter
