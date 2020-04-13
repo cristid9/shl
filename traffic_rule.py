@@ -7,11 +7,11 @@ class TrafficRule:
         self._protocol = None
 
     @property
-    def cird_block(self):
+    def cidr_block(self):
         return self._cidr_block
 
-    @cird_block.setter
-    def cird_block(self, value):
+    @cidr_block.setter
+    def cidr_block(self, value):
         self._cidr_block = value
 
     @property

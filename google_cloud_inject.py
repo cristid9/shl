@@ -18,6 +18,7 @@ def generate_firewall_body(rule):
 
 def inject_rule_google(rule, target_platform):
     service = discovery.build(target_platform.service, target_platform.service_version, credentials=target_platform.credentials)
+    # service = discovery.build('compute', 'v1', credentials=target_platform.credentials)
 
     firewall_body = generate_firewall_body(rule)
 

@@ -18,9 +18,9 @@ if __name__ == "__main__":
     platform = TargetPlatform()
     platform.platform_type = PLATFORM_GOOGLE
     platform.credentials = GoogleCredentials.get_application_default()
-    platform.service =  "compute"
-    platform.project_version = "v1"
-    platform.project_name = "shoreline"
+    platform.service = "compute"
+    platform.service_version = "v1"
+    platform.project_name = "shoreline-271421"
 
     inject_firewall_rules(firewall_rules, platform)
 
